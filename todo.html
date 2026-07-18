@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+
+    <h1>The Daily Schedule</h1>
+
+    <div class="padding">
+
+        <div class="layer">
+
+            <div class="details">
+
+                <p class="c">Add Daily</p>
+                <p class="c">Task</p>
+
+                <!-- Progress Bar -->
+                <progress id="progressbar" value="0" max="100"></progress>
+
+            </div>
+
+            <div class="stat-numbers">
+                <p id="Numbers">0%</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <form>
+
+        <input
+            id="details"
+            maxlength="100"
+            placeholder="Write your task"
+        >
+
+        <p>Click Here</p>
+
+        <button type="button" id="btn">+</button>
+
+        <p id="text"></p>
+
+        <div id="inputs"></div>
+
+    </form>
+
+    <script src="todo.js"></script>
+
+</body>
+</html>

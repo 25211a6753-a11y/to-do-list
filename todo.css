@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image:url("back.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    min-height:100vh;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align:center;
+    font-size:40px;
+    background:rgb(244,153,153);
+    padding:15px;
+}
+
+/* Top Card */
+
+.padding{
+    width:700px;
+    max-width:90%;
+    margin:80px auto 20px;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+.layer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.details{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.c{
+    font-size:28px;
+    color:white;
+    font-weight:bold;
+}
+
+/* Progress Bar */
+
+#progressbar{
+    width:300px;
+    height:20px;
+}
+
+#progressbar::-webkit-progress-bar{
+    background:#d9d9d9;
+    border-radius:20px;
+}
+
+#progressbar::-webkit-progress-value{
+    background:limegreen;
+    border-radius:20px;
+}
+
+/* Percentage Circle */
+
+.stat-numbers{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:lightskyblue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#Numbers{
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* Form */
+
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:40px;
+}
+
+#details{
+    width:450px;
+    max-width:90%;
+    font-size:22px;
+    padding:12px;
+    border-radius:10px;
+    border:2px solid black;
+    background:lightskyblue;
+}
+
+#details:hover{
+    background:white;
+}
+
+#btn{
+    margin-top:15px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    font-size:30px;
+    cursor:pointer;
+    background:green;
+    color:white;
+}
+
+#btn:hover{
+    background:darkgreen;
+}
+
+#text{
+    margin-top:15px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+#inputs{
+    width:550px;
+    max-width:95%;
+    margin-top:20px;
+}
+
+/* Task Box */
+
+.task-box{
+    width:100%;
+    min-height:60px;
+    padding:12px;
+    margin:12px 0;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    border-radius:12px;
+    border:2px solid black;
+    background:rgb(80,118,221);
+}
+
+.task-box input[type="checkbox"]{
+    width:22px;
+    height:22px;
+    cursor:pointer;
+}
+
+.task-text{
+    flex:1;
+    font-size:22px;
+    color:white;
+    word-break:break-word;
+}
+
+/* Buttons */
+
+.complete-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:8px;
+    background:green;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.delete-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:8px;
+    background:red;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.complete-btn:hover{
+    background:darkgreen;
+}
+
+.delete-btn:hover{
+    background:darkred;
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+    .layer{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    #progressbar{
+        width:100%;
+    }
+
+    #details{
+        width:90%;
+    }
+
+    #inputs{
+        width:95%;
+    }
+}
